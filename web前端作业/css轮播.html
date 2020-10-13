@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrap {
+            width: 800px;
+            height: 450px;
+            margin: 100px auto;
+            border: 1px solid pink;
+            overflow: hidden;
+        }
+        
+        .wrap .content {
+            width: 500%;
+            height: 450px;
+            font-size: 0;
+            float: left;
+            animation: hd 8s 1s forwards;
+        }
+        
+        .wrap .content img {
+            width: 800px;
+            height: 450px;
+        }
+        
+        @keyframes hd {
+            0% {
+                transform: translateX(0px);
+            }
+            25% {
+                transform: translateX(-800px);
+            }
+            50% {
+                transform: translateX(-1600px);
+            }
+            75% {
+                transform: translateX(-2400px);
+            }
+            100% {
+                transform: translateX(-3200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="content">
+            <img src="./images/0c.jpg" alt="">
+            <img src="./images/90.jpg" alt="">
+            <img src="./images/23.jpg" alt="">
+            <img src="./images/26.jpg" alt="">
+            <img src="./images/n0.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

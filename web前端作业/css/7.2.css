@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 800px;
+}
+
+.main {
+    width: 100%;
+    height: 300px;
+    margin-top: 200px;
+    background-color: #441b79;
+    color: #fff;
+}
+
+.main .content {
+    list-style: none;
+    width: 220px;
+    height: 477px;
+    left: 190px;
+    top: -52px;
+    position: relative;
+    background-color: #0477c0;
+}
+
+.main ul>li {
+    height: 70px;
+    border-bottom: 1px solid #1681c4;
+}
+
+.main ul>li:nth-child(1) {
+    height: 50px;
+    background-color: #188eee;
+    border-bottom: 1px solid #188eee;
+}
+
+.content .content-left {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    width: 45px;
+    height: 45px;
+    background-color: blue;
+    background: url(./images/06.png) no-repeat;
+    transform: scale(0.6);
+}
+
+.content .content-font {
+    left: 60px;
+    top: 17px;
+    position: absolute;
+    font-size: 15px;
+}
+
+.content .wrap {
+    position: relative;
+}
+
+.content .wrap:hover .content-lost {
+    display: block;
+}
+
+.content .content-lost {
+    width: 980px;
+    height: 420px;
+    left: 220px;
+    top: 1px;
+    position: absolute;
+    background-color: red;
+    display: none;
+}
+
+.content .one {
+    top: -70px;
+    background-color: yellow;
+}
+
+.content .two {
+    top: -141px;
+    background-color: pink;
+}
+
+.content .three {
+    top: -213px;
+    background-color: #096;
+}
+
+.content .four {
+    top: -284px;
+    background-color: purple;
+}
+
+.content .five {
+    top: -355px;
+    background-color: brown;
+}
+
+.content .text-left {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    width: 220px;
+    height: 35px;
+}
+
+.content .text-btm {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    font-size: 14px;
+    color: #71d2f7;
+}
+
+.content .text-right {
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    top: 9px;
+    opacity: .5;
+    right: 15px;
+    background: no-repeat url(./images/03.png) -153px -155px;
+    transform: scale(0.4);
+    z-index: 2;
+}

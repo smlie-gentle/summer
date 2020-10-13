@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人简历</title>
+	<style type="text/css">
+     .a{
+     	background-image: url(9.jpg);
+     	background-size:cover; 
+     }
+     p.class{
+        font-size:16px; 
+         font-style: oblique;
+         font-weight: bold;
+     }
+     body{
+     	text-align: center;
+     }
+           table.one{
+           table-layout: fixed;
+           caption-side: center;
+           margin:auto;
+           word-break: break-all;
+           word-wrap: break-word; 
+      }
+      #box {
+  width: 100px;
+  margin-right: 13px; 
+  padding:0px; 
+  float: right;
+}
+}
+p.one{
+	font-size:18px;
+	text-align: left; 
+}
+p.two{
+	margin-left: 25px;
+     margin-right: 25px;
+     font-size:18px;
+}
+  </style>
+</head>
+<body>
+<form action="">
+<table width="700px" class="one">
+	<tr class="a">
+		<td width="550px">
+			<h1>个人简历</h1></br>
+			<table class="one></table>
+			<tr>
+                <td align="left">
+                    姓&nbsp;&nbsp;名：<input size="20">&nbsp;&nbsp;  
+                    性&nbsp;&nbsp;别： <input size="20"></br></br>
+                    <p class="one">&nbsp;爱&nbsp;&nbsp;&nbsp;好:<input size="58"></p>
+                    </br>
+                	出生年月：<input size="19">&nbsp;&nbsp;
+                	学&nbsp;&nbsp;校：<input size="18"></br></br>
+                	<p class="one">&nbsp;籍&nbsp;&nbsp;&nbsp;贯:<input size="58"></p>
+                	</br>
+                	 学&nbsp;&nbsp;历：<input size="18">&nbsp;&nbsp;  
+                    政治面貌： <input size="18"></br></br>
+                  </td>
+                </tr></table><td width="150px">
+                <table id="box">
+                <tr>
+                	<td>
+                	<img src="30.jpg">
+                	</td>
+                </tr>
+                </table>
+                </td>
+		    </td>
+	   </tr>    
+</table>
+	</form>
+<table class="one"><tr class="a"><td>
+<table>
+		<tr><td width="700px">
+			<h2>求&nbsp;&nbsp;职&nbsp;&nbsp;意&nbsp;&nbsp;向：</h2>
+			<p class="two">求职意向不仅可以成为我们整份简历的灵魂，简历的其他内容都可以围绕求职意向展开，而且有明确的求职意向可以让招聘人员感觉到我们求职的诚意，在同等条件下，更能增加我们求职成功的几率。在撰写求职意向时，建议围绕目标职位展开，尽量与目标职位相匹配</p>
+			</td></tr>
+			</table>
+<table>
+		<tr><td width="700px">
+			<h2>学&nbsp;&nbsp;习&nbsp;&nbsp;经&nbsp;&nbsp;历：</h2>
+			<p class="two">1、基本材料简要齐全；就是说，我是谁，来自哪里，在那里受过教育，什么时候开始工作；
+           2、突出亮点，归纳一些自己风光时刻，比如大学获得全年级第一，工作的时候得过优秀员工等；
+          3、真实。</p>
+			</td></tr>
+			</table>
+</td></tr></table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .wrap {
+        position: relative;
+        /* width: 200px; */
+        height: 200px;
+    }
+    
+    img {
+        width: 150px;
+    }
+    
+    .btn {
+        position: absolute;
+        width: 30px;
+    }
+</style>
+
+<body>
+    <div class="wrap"><img src="images/5.gif" alt="">
+        <button class="btn">X</button>
+    </div>
+    <script>
+        var img = document.querySelector('.wrap');
+        var btn = document.querySelector('.btn');
+        btn.onclick = function() {
+            img.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

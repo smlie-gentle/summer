@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.wrap {
+    height: 550px;
+    width: 853px;
+    background-color: #fff;
+    margin: 80px auto;
+    position: relative;
+}
+
+.wrap form {
+    width: 426px;
+    height: 416px;
+    margin-top: 57px;
+    margin-left: 105px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: absolute;
+    text-align: right;
+    font-size: 13px;
+}
+
+.wrap input {
+    width: 292px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 45px;
+    outline: hidden;
+}
+
+.wrap input:nth-child(1) {
+    margin-top: 41px;
+}
+
+.wrap .btn {
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #3c6cb1;
+    color: #fff;
+}
+
+.wrap .btn1 {
+    width: 140px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 7px;
+    background-color: #3c6cb1;
+    color: #fff;
+}
+
+.wrap .box {
+    position: relative;
+}
+
+.wrap .tip {
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: 60px;
+    color: #fff;
+    left: 392px;
+    top: 32px;
+    background-color: #56a9d3;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 60px;
+}
+
+.wrap .tip span {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: -20px;
+    top: 18px;
+    border: 10px solid transparent;
+    border-right-color: #56a9d3;
+}
+
+.wrap .box:focus~.tip {
+    display: block;
+}

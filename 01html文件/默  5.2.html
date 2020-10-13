@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: url(./images/9.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .warp {
+            width: 1400px;
+            height: 500px;
+            margin: 80px auto;
+            margin-left: 200px;
+        }
+        
+        .warp .warp-img {
+            width: 130px;
+            height: 500px;
+            float: left;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .warp div:nth-child(1) {
+            background-image: url(./images/c1.jpg);
+        }
+        
+        .warp div:nth-child(2) {
+            background-image: url(./images/c0.jpg);
+        }
+        
+        .warp div:nth-child(3) {
+            background-image: url(./images/c2.jpg);
+        }
+        
+        .warp div:nth-child(4) {
+            background-image: url(./images/c3.jpg);
+        }
+        
+        .warp div:nth-child(5) {
+            background-image: url(./images/c4.jpg);
+        }
+        
+        .warp div:nth-child(6) {
+            background-image: url(./images/c5.jpg);
+        }
+        
+        .warp .warp-img:hover {
+            padding-left: 500px;
+            transition-duration: .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <div class="warp-img"></div>
+        <div class="warp-img"></div>
+        <div class="warp-img"></div>
+        <div class="warp-img"></div>
+        <div class="warp-img"></div>
+        <div class="warp-img"></div>
+    </div>
+</body>
+
+</html>

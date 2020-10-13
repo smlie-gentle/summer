@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .wrap {
+            position: relative;
+            margin: 100px auto;
+            width: 500px;
+            height: 500px;
+            background: url(./images/fsw.png);
+            background-size: cover;
+            border-radius: 50%;
+            animation: hd 5s linear infinite;
+        }
+        
+        @keyframes hd {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            100% {
+                transform: rotateZ(360deg);
+            }
+        }
+        
+        .wrap .icon1,
+        .wrap .icon2,
+        .wrap .icon3 {
+            position: absolute;
+            animation: img 5s linear infinite;
+        }
+        
+        .wrap .icon1 {
+            left: 37%;
+            top: -70px;
+        }
+        
+        .wrap .icon2 {
+            top: 288px;
+            left: -16px;
+        }
+        
+        .wrap .icon3 {
+            top: 233px;
+            right: -36px;
+        }
+        
+        @keyframes img {
+            0% {
+                transform: rotateZ(360deg);
+            }
+            100% {
+                transform: rotateZ(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <img src="./images/girl.png" alt="" class="icon1">
+        <img src="./images/boy.png" alt="" class="icon2">
+        <img src="./images/shamegirl.png" alt="" class="icon3">
+    </div>
+</body>
+
+</html>

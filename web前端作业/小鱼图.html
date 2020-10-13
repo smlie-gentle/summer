@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .bg {
+            width: 174px;
+            height: 126px;
+            margin: 100px auto;
+            background: url("./images/30.png");
+            animation: hd 1s infinite steps(12);
+        }
+        
+        @keyframes hd {
+            0% {
+                background-position: 0px 0px;
+            }
+            100% {
+                background-position: 0px -1512px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+</body>
+
+</html>

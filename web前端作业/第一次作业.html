@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一次作业</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrap {
+            width: 500px;
+            height: 950px;
+            margin: 0 auto;
+            background-color: aquamarine;
+            position: relative;
+        }
+        
+        h1 {
+            display: block;
+            text-align: center;
+            height: 80px;
+            line-height: 80px;
+            border-bottom: 2px solid black;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .imgs {
+            display: none;
+        }
+        
+        button {
+            height: 50px;
+            font-size: 20px;
+            margin-left: 32.5%;
+        }
+        
+        p {
+            text-indent: 2em;
+            font-size: 18px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .last {
+            position: absolute;
+            bottom: 15px;
+            left: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>何以笙箫默的默</h1>
+        <img src="images/index1.jpg" alt="">
+        <h3>李云龙经典语录</h3>
+        <p>嘿，老子什么都不会，就他娘的会抢</p>
+        <p>什么他娘的精锐，老子打的就是精锐。</p>
+        <p>二营长，你他娘的意大利炮呢？给老子拉上来！</p>
+        <p><a href="https://www.baidu.com" target="_blank">百度搜搜</a></p>
+        <button>老许你来看看这个</button>
+        <img src="images/index.jpg" alt="" class="imgs">
+        <a href="https://www.kugou.com/yy/html/rank.html" target="_blank" class="last">酷狗音乐一起来听听</a>
+    </div>
+    <script>
+        var imgs = document.querySelector('.imgs');
+        var btn = document.querySelector('button');
+        btn.onclick = function() {
+            imgs.style.display = 'block';
+        }
+        btn.onmouseleave = function() {
+            imgs.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

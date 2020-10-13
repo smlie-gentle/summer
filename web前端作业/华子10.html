@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrap {
+            width: 650px;
+            height: 530px;
+            margin: 100px auto;
+            border: 1px solid #ccc;
+            background-color: pink;
+        }
+        
+        .wrap input {
+            margin: 10px 0px 8px 10px;
+        }
+        
+        .wrap .bg {
+            width: 650px;
+            height: 500px;
+            background: url("./images/1.jpg");
+            background-size: cover;
+        }
+        
+        .wrap input:nth-child(1):checked~.bg {
+            background: url("./images/1.jpg");
+            background-size: cover;
+        }
+        
+        .wrap input:nth-child(2):checked~.bg {
+            background: url("./images/2.jpg");
+            background-size: cover;
+        }
+        
+        .wrap input:nth-child(3):checked~.bg {
+            background: url("./images/3.jpg");
+            background-size: cover;
+        }
+        
+        .wrap input:nth-child(4):checked~.bg {
+            background: url("./images/4.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <input type="radio" name="mm">
+        <input type="radio" name="mm">
+        <input type="radio" name="mm">
+        <input type="radio" name="mm">
+        <div class="bg"></div>
+    </div>
+</body>
+
+</html>

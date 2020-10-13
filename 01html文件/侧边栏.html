@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        height: 2000px;
+        background-image: url(images/9.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    div {
+        position: fixed;
+        /* 固定定位 元素位置固定在屏幕上 */
+        width: 135px;
+        height: 416px;
+        right: 0;
+        top: 100px;
+        /* background-color: #096; */
+    }
+    
+    li {
+        list-style: none;
+        height: 30px;
+        border: 1px solid white;
+        background: pink;
+        transform: translateX(100px);
+        transition: 1s;
+        padding: 5px;
+    }
+    
+    div:hover li {
+        transform: translateX(0px);
+    }
+    /* li:nth-child(1) {
+        transition-delay: 0s;
+    }
+    
+    li:nth-child(2) {
+        transition-delay: 0.1s;
+    }
+    
+    li:nth-child(3) {
+        transition-delay: 0.15s;
+    }
+    
+    li:nth-child(4) {
+        transition-delay: 0.2s;
+    }
+    
+    li:nth-child(5) {
+        transition-delay: 0.25s;
+    }
+    
+    li:nth-child(6) {
+        transition-delay: 0.3s;
+    }
+    
+    li:nth-child(7) {
+        transition-delay: 0.35s;
+    }
+    
+    li:nth-child(8) {
+        transition-delay: 0.4s;
+    }
+    
+    li:nth-child(9) {
+        transition-delay: 0.45s;
+    }
+    
+    li:nth-child(10) {
+        transition-delay: 0.5s;
+    }
+    
+    li:nth-child(11) {
+        transition-delay: 0.55s;
+    }
+    
+    li:nth-child(12) {
+        transition-delay: 0.6s;
+    }
+    
+    li:nth-child(13) {
+        transition-delay: 0.65s;
+    } */
+</style>
+
+<body>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+        </ul>
+    </div>
+    <script>
+        for (var i = 0; i < document.querySelectorAll('li').length; i++) {
+            document.querySelectorAll('li')[i].style.transitionDelay = i * 0.05 + 's'
+        }
+    </script>
+</body>
+
+</html>

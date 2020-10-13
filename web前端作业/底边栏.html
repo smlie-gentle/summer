@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            list-style: none;
+            width: 816px;
+            height: 205px;
+            background-color: #ccc;
+            overflow: hidden;
+            margin: 100px auto;
+            border: 2px solid #ccc;
+        }
+        
+        ul li {
+            width: 200px;
+            height: 200px;
+            padding: 2px;
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        li span {
+            width: 200px;
+            height: 80px;
+            background-color: black;
+            opacity: .5;
+            position: absolute;
+            color: #fff;
+            font-size: 13px;
+            text-align: center;
+            top: 200px;
+            z-index: 2;
+        }
+        
+        ul li:hover {
+            transition: 1s;
+            transform: scale(1.2);
+        }
+        
+        ul li:hover>span {
+            position: absolute;
+            top: 120px;
+            transition: 1s;
+        }
+        
+        ul li:nth-child(1) {
+            background: url(./images/0c.jpg) no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        ul li:nth-child(2) {
+            background: url(./images/23.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        
+        ul li:nth-child(3) {
+            background: url(./images/26.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        
+        ul li:nth-child(4) {
+            background: url(./images/90.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><span>等我磨好了刀，把你们都变成小姐姐</span></li>
+        <li><span>等我磨好了刀，把你们都变成小姐姐</span></li>
+        <li><span>等我磨好了刀，把你们都变成小姐姐</span></li>
+        <li><span>等我磨好了刀，把你们都变成小姐姐</span></li>
+    </ul>
+</body>
+
+</html>

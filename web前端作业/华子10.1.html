@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo,
+        .logo .left,
+        .logo .right,
+        .logo .center {
+            border: 1px solid rgb(255, 103, 0);
+            padding: 5px;
+            width: 49px;
+            height: 49px;
+        }
+        
+        .logo {
+            background-color: rgb(255, 103, 0);
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+            z-index: -1;
+        }
+        
+        .logo .left {
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            background: url("./images/mi.png") no-repeat;
+            background-position: center;
+            z-index: 1;
+            transition: left 0.2s ease 0s;
+        }
+        
+        .logo .right {
+            position: absolute;
+            left: 59px;
+            top: -1px;
+            background: url("./images/mi-home.png") no-repeat;
+            background-position: center;
+            z-index: 1;
+            transition: left 0.2s ease 0s;
+        }
+        
+        .logo .center {
+            position: absolute;
+            z-index: 3;
+        }
+        
+        .logo .center:hover~.left {
+            position: absolute;
+            left: -62px;
+        }
+        
+        .logo .center:hover~.right {
+            position: absolute;
+            left: -2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <div class="center"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

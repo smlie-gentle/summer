@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        position: absolute;
+    }
+</style>
+
+<body>
+    <div>
+        <img src="images/5.gif" alt="">
+    </div>
+    <script>
+        var pic = document.querySelector('img');
+        document.addEventListener('mousemove', function(e) {
+            var x = e.pageX;
+            var y = e.pageY;
+            pic.style.left = x - 70 + 'px';
+            pic.style.top = y - 85 + 'px';
+        })
+    </script>
+</body>
+
+</html>
